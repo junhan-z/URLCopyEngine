@@ -1,0 +1,15 @@
+{
+  "name": "Copy Engine",
+  "version": "1.0",
+  "description": "Copy a pattern from URL.",
+  "permissions": ["tabs", "declarativeContent", "storage", "clipboardWrite"],
+  "background": {
+    "persistent": false,
+    "scripts": ["copy_engine.js"]
+  },
+  "page_action": {
+    "default_popup": "popup.html"
+  },
+  "options_page": "options.html",
+  "manifest_version": 2
+}
