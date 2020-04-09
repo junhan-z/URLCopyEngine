@@ -10,7 +10,7 @@ The URL
 While the browser supports such format as `cl/<number>` and it is exchanged via communication channel all the time. 
 Having a one click button is way more convenient than select text.
 
-Some website might have a copy button, but having this one you can customize for whatever site(google.com only for now).
+Some website might have a copy button, but having this one you can customize for whatever site.
 
 ## Instruction
 Go to options page:
