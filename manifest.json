@@ -1,5 +1,10 @@
 {
   "name": "Copy Engine",
+  "icons": {
+    "16": "copy-icon-16x16.png",
+    "32": "copy-icon-32x32.png",
+    "192": "copy-icon-192x192.png"
+  },
   "version": "1.0",
   "description": "Copy a pattern from URL.",
   "permissions": ["tabs", "declarativeContent", "storage", "clipboardWrite"],
