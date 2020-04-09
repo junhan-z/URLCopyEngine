@@ -1,4 +1,7 @@
 # URLCopyEngine
+<img src="copy-icon-192x192.png">
+
+
 ## Overview
 A chrome extension to copy a specific pattern of current URL
 I was annoyed by sending certain parts of a url.
