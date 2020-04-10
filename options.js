@@ -25,15 +25,18 @@ function save_options() {
   var pattern_regex = document.getElementById('pattern_regex').value;
 
   chrome.storage.sync.set({[url_regex]: pattern_regex}, function() {
-    _update_status('Saved pattern ' + url_regex + ' ' + pattern_regex);
+    _update_status('Updated!');
     _append_to_list(url_regex, pattern_regex);
   });
 }
 
 function _append_to_list(url_regex, pattern_regex) {
-  var li = document.createElement('li');
-  li.innerHTML = url_regex + ': ' + pattern_regex;
-  document.getElementById('saved-options').appendChild(li);
+  var liURL = document.createElement('li');
+  var liSubURL = document.createElement('li');
+  liURL.innerHTML = url_regex;
+  liSubURL.innerHTML = pattern_regex;
+  document.getElementById('saved_url_regex').appendChild(liURL);
+  document.getElementById('saved_suburl_regex').appendChild(liSubURL);
 }
 
 function restore_options() {

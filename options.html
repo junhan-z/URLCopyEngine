@@ -1,20 +1,62 @@
 <!DOCTYPE html>
 <html>
-  <head><title>The Copy Engine</title></head>
+  <head>
+    <title>URL Copy Engine Options</title>
+    <link rel="stylesheet" type="text/css" href="options.css">
+  </head>
   <body>
-    <div id="status"></div>
+    <div class="main">
+      <div class="header">
+        <h2>URL Copy Engine</h2>
+      </div>
+      <div class="options">
+        <div class="status">
+          <p id="status"></p>
+        </div>
 
-    <label> Url </label><input type="text" id="url_regex">
-    <label> Pattern </label><input type="text" id="pattern_regex">
+        <div class="options_header">Options</div>
 
-    <button id="save">Save</button>
-    <button id="list">List</button>
-    <button id="clear">Clear</button>
+        <div class="option">
+          <div class="option_title">URL Regex</div>
+          <div class="option_content">
+            <input type="text" id="url_regex">
+          </div>
+        </div>
 
+        <div class="option">
+          <div class="option_title">Sub-URL Regex</div>
+          <div class="option_content">
+            <input type="text" id="pattern_regex">
+          </div>
+        </div>
 
-    <ul id="saved-options">
-    </ul>
+        <div class="button_group">
+          <button class="button" id="save">Save</button>
+          <button class="button"id="list">List</button>
+          <button class="button" id="clear">Clear</button>
+        </div>
 
-    <script src="options.js"></script>
+      </div>
+      <div class="options">
+        <div class="options_header">Saved Options</div>
+        <div class="saved_options">
+          <div class="half_row">
+            <h3>URL Regex</h3>
+            <ul id="saved_url_regex">
+            </ul>
+          </div>
+          <div class="half_row">
+            <h3>Sub-URL Regex</h3>
+            <ul id="saved_suburl_regex">
+            </ul>
+          </div>
+        </div>
+
+        <ul id="saved-options">
+        </ul>
+      </div>
+
+    </div>
   </body>
+  <script src="options.js"></script>
 </html>
