@@ -16,7 +16,7 @@ Having a one click button is way more convenient than select text.
 Some website might have a copy button, but having this one you can customize for whatever site.
 
 ## Instruction
-For an example, if we'd likve to match the content of `questions/<number> when visit `stackoverflow.com`.
+For an example, if we'd like to match the content of `questions/<number> when visit `stackoverflow.com`.
 
 Go to options page:
 1. add which URL pattern to match, as specific as possible, otherwise the pattern of the first matched URL pattern will be selected. In this case: `stackoverflow.com`
@@ -25,7 +25,7 @@ Go to options page:
 
 <img src="assets/img/options_page_example.png">
 
-4. Go to `stackoverflow.com` pages, click the extension button, the content you are interested is copied to your clipboard with a notification. Now you can paste it anywhere.
+4. Go to `stackoverflow.com` pages, click the extension button, the content you are interested is copied to your clipboard with a notification. Voila, now you can paste it anywhere.
 <img src="assets/img/result.png">
 
 
