@@ -17,6 +17,7 @@ Some website might have a copy button, but having this one you can customize for
 
 ## Instruction
 Go to options page:
+<img src="assets/img/options_page.png">
 1. add which URL pattern to match, as specific as possible, otherwise the pattern of the first matched URL pattern will be selected. In this case: `domain\/cl\/[0-9]+\/.*`
 2. add the pattern of the URL to match, in this case: `cl\/[0-9]+`
 
