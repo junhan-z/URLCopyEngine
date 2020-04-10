@@ -21,8 +21,12 @@ For an example, if we'd likve to match the content of `questions/<number> when v
 Go to options page:
 1. add which URL pattern to match, as specific as possible, otherwise the pattern of the first matched URL pattern will be selected. In this case: `stackoverflow.com`
 2. add the pattern of the URL to match, in this case: `questions\/[0-9]+`
+3. click 'Save'
 
 <img src="assets/img/options_page.png">
+
+4. Go to `stackoverflow.com` pages, click the extension button, the content you are interested is copied to your clipboard with a notification. Now you can paste it anywhere.
+<img src="assets/img/result.png">
 
 
 ## Disclaimer
