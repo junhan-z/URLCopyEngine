@@ -7,7 +7,13 @@
   },
   "version": "1.0",
   "description": "Copy a pattern from URL.",
-  "permissions": ["tabs", "declarativeContent", "storage", "clipboardWrite"],
+  "permissions": [
+    "tabs",
+    "declarativeContent",
+    "storage",
+    "clipboardWrite",
+    "notifications"
+  ],
   "background": {
     "persistent": false,
     "scripts": ["copy_engine.js"]

@@ -5,31 +5,44 @@ function matchURL() {
       var used_url_pattern = '';
       var used_pattern = '';
 
-      var content = '';
+      var subURL = '';
       for(let [url_regex, pattern_regex] of Object.entries(options)) {
         if (!url.match(url_regex)) {
           continue;
         }
-        content = url.match(pattern_regex);
+        subURL = url.match(pattern_regex);
         used_url_regex = url_regex;
         used_pattern_regex = pattern_regex;
         break;
       }
 
-      if (!content) {
-        alert('no match pattern added');
-      } else {
+      if (subURL) {
         var el = document.createElement('textarea');
-        el.value = content;
+        el.value = subURL;
         el.setAttribute('readonly', '');
         document.body.appendChild(el);
         el.select();
         document.execCommand('copy')
         document.body.removeChild(el);
-        alert('copied');
       }
+      notify(subURL);
     });
   });
+}
+
+function notify(subURL) {
+  var opt = {
+    type: "basic",
+    iconUrl: "copy-icon-192x192.png"
+  }
+  if (subURL) {
+    opt.title = "Sub-URL copied";
+    opt.message = 'Copied: ' + subURL;
+  } else {
+    opt.title = "Nothing copied";
+    opt.message = 'No match pattern found.';
+  }
+  chrome.notifications.create(opt);
 }
 
 chrome.browserAction.onClicked.addListener(function(tab) {
