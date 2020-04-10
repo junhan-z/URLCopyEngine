@@ -23,7 +23,7 @@ Go to options page:
 2. add the pattern of the URL to match, in this case: `questions\/[0-9]+`
 3. click 'Save'
 
-<img src="assets/img/options_page.png">
+<img src="assets/img/options_page_example.png">
 
 4. Go to `stackoverflow.com` pages, click the extension button, the content you are interested is copied to your clipboard with a notification. Now you can paste it anywhere.
 <img src="assets/img/result.png">
