@@ -7,6 +7,8 @@ A chrome extension to copy a specific pattern of URL of current tab.
 
 ## Installation
 For more details reference to [google's page](https://developer.chrome.com/extensions/getstarted).
+
+0. Download this repo and unzip to a directory.
 1. Open the Extension Management page by navigating to `chrome://extensions`.
     * The Extension Management page can also be opened by clicking on the Chrome menu, hovering over More Tools then selecting Extensions.
 2. Enable Developer Mode by clicking the toggle switch next to Developer mode.
