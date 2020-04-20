@@ -36,11 +36,11 @@ function notify(subURL) {
     iconUrl: "copy-icon-192x192.png"
   }
   if (subURL) {
-    opt.title = "Sub-URL copied";
+    opt.title = "✅ Sub-URL matched";
     opt.message = 'Copied: ' + subURL;
   } else {
-    opt.title = "Nothing copied";
-    opt.message = 'No match pattern found.';
+    opt.title = "⚠️ No Sub-URL matched";
+    opt.message = 'Nothing was copied.';
   }
   chrome.notifications.create(opt);
 }

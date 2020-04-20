@@ -18,7 +18,9 @@
     "persistent": false,
     "scripts": ["copy_engine.js"]
   },
-  "browser_action": {},
+  "browser_action": {
+    "default_title": "Click to copy a part of target URL."
+  },
   "options_page": "options.html",
   "manifest_version": 2
 }
